@@ -66,7 +66,7 @@ class MonotonicCubicSpline
  
 class CubicSpline  # natural or clamped
 
-# adapted from:
+# inspired by:
 # http://www.michonline.com/ryan/csc/m510/splinepresent.html
  
   constructor: (x, a, d0, dn) ->
