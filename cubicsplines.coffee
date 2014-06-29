@@ -1,6 +1,3 @@
-# https://github.com/jawj/cubicsplines
-# demo: http://blog.mackerron.com/2011/01/01/javascript-cubic-splines/
-
 class MonotonicCubicSpline
 
 # inspired by: 
