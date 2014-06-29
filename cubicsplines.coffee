@@ -1,7 +1,8 @@
+# https://github.com/jawj/cubicsplines
+# demo: http://blog.mackerron.com/2011/01/01/javascript-cubic-splines/
+
 class MonotonicCubicSpline
- 
-# George MacKerron, mackerron.com, 2011
- 
+
 # inspired by: 
 # http://sourceforge.net/mailarchive/forum.php?thread_name=
 # EC90C5C6-C982-4F49-8D46-A64F270C5247%40gmail.com&forum_name=matplotlib-users
@@ -13,6 +14,9 @@ class MonotonicCubicSpline
 #   SIAM Journal of Numerical Analysis 17(2), 238 - 246.
 # http://en.wikipedia.org/wiki/Monotone_cubic_interpolation
 # http://en.wikipedia.org/wiki/Cubic_Hermite_spline
+
+# note: there may be glitches that cause non-monotonicity on rare occasions
+# (best I can tell, these are in the original sources, not my translation)
  
   constructor: (x, y) ->
     n = x.length
@@ -61,9 +65,7 @@ class MonotonicCubicSpline
  
  
 class CubicSpline  # natural or clamped
- 
-# by George MacKerron, mackerron.com
- 
+
 # adapted from:
 # http://www.michonline.com/ryan/csc/m510/splinepresent.html
  
